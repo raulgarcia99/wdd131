@@ -1,0 +1,64 @@
+:root{
+    --primary-color: #D90808;
+    --secondary-color: #E7E7E7;
+    --accent1-color: #FF9A15;
+    --accent2-color: #FFE4B8;
+    --darkfont-color: #000000;
+    --lightfont-color: #ffffff;
+    --heading-font: 200 30px "Fira Sans", sans-serif;
+    --text-font: 400 16px "Fira Sans", sans-serif;
+
+}
+
+body{
+    font: var(--text-font);
+}
+
+#course-title{
+display: block;
+background-color: var(--secondary-color);
+padding: 2rem;
+border: 1px solid var(--darkfont-color);
+font-size: 2rem;
+text-align: center;
+font: var(--heading-font);
+}
+
+nav{
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav a{
+    display: block;
+    color: var(--lightfont-color);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main{
+    text-align: center;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+}
+
+@media (min-width: 640px){
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 0 auto;
+    }
+}
+
