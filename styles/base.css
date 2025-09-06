@@ -50,7 +50,6 @@ nav a:hover {
 }
 
 main{
-    max-width: 100%;
     text-align: center;
     display: grid;
     grid-template-columns:4fr 2fr;
