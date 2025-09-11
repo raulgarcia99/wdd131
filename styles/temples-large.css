@@ -1,25 +1,26 @@
 :root {
-    --primary-color: #00afce;
-    --secondary-color: #cef7fa;
-    --accent1-color: #3780c9;
+    --primary-color: #047a8f;
+    --secondary-color: #e8ffff;
+    --accent1-color: #3170af;
     --accent2-color:#D3D3FF;
     --whitefont: #ffffff;
     --blackfont: #000000;
-    --header-font: 300 25px "Libertinus Serif Display", system-ui;
-    --text-font: 400 15px "Oxygen", sans-serif;
+    --header-font: 300 22px "Libertinus Serif Display", system-ui;
+    --text-font: 400 16px "Oxygen", sans-serif;
 }
 
 body {
     font: var(--text-font);
+    text-align: center;
 }
 
 header{
     background-color: var(--primary-color);    
-    text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    
+    align-items: center;
+    max-width: 100%;
+    min-width: 400px;   
 
 }
 .web-title {
@@ -37,15 +38,13 @@ nav ul {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-
-
 }
 
 nav a {
     color: var(--accent1-color);
-    font-size: 18px;
     text-decoration: none;
     padding: 15px;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -55,4 +54,12 @@ nav a:hover {
 
 h1 {
     font: var(--header-font);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--whitefont);
+    padding: 1rem;
+    max-width: 100%;
+    min-width: 400px;   
 }
