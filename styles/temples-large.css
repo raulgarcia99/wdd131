@@ -26,6 +26,7 @@ header{
 .web-title {
     font: var(--header-font);
     color: var(--whitefont);
+    width: auto;
 }
 
 nav {
