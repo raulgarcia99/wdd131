@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #00afce;
+    --secondary-color: #cef7fa;
+    --accent1-color: #3780c9;
+    --accent2-color:#D3D3FF;
+    --whitefont: #ffffff;
+    --header-font: 300 25px "Libertinus Serif Display", system-ui;
+    --text-font: 400 15px "Oxygen", sans-serif;
+}
+
+* {
+    font: var(--text-font);
+}
+
+h1 {
+    font: var(--header-font);
+}
