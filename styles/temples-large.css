@@ -4,12 +4,53 @@
     --accent1-color: #3780c9;
     --accent2-color:#D3D3FF;
     --whitefont: #ffffff;
+    --blackfont: #000000;
     --header-font: 300 25px "Libertinus Serif Display", system-ui;
     --text-font: 400 15px "Oxygen", sans-serif;
 }
 
-* {
+body {
     font: var(--text-font);
+}
+
+header{
+    background-color: var(--primary-color);    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+
+}
+.web-title {
+    font: var(--header-font);
+    color: var(--whitefont);
+}
+
+nav {
+    background-color: var(--secondary-color);
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+
+}
+
+nav a {
+    color: var(--accent1-color);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: var(--accent2-color);
+    border: 1px solid var(--blackfont);
 }
 
 h1 {
