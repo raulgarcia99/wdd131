@@ -14,35 +14,39 @@ body {
     text-align: center;
 }
 
-header{
-    background-color: var(--primary-color);    
+header{    
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    min-width: 400px;   
-
+    min-width: 400px;
 }
 .web-title {
+    background-color: var(--primary-color);
     font: var(--header-font);
     color: var(--whitefont);
     width: auto;
+    padding: 20px;
 }
 
 #menu {
     background: none;
     color: var(--blackfont);
     position: absolute;
-    top: 1rem;
+    top: 1.2rem;
     right: 1rem;
+    border: 0;
+    font-size: 25px;
 }
 
 #menu::before {
+    color: var(--accent1-color);
     content:"☰" ;  
 }
 
 #menu.open::before {
-    content:✖️;
+    color: var(--accent1-color);
+    content:"X";
 }
 
 
@@ -91,7 +95,7 @@ h1 {
 }
 
 img {
-    max-width: 350px;
+    max-width: 300px;
     height: auto;
 }
 
