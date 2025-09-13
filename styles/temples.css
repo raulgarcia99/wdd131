@@ -5,7 +5,7 @@
     --accent2-color:#D3D3FF;
     --whitefont: #ffffff;
     --blackfont: #000000;
-    --header-font: 300 22px "Libertinus Serif Display", system-ui;
+    --header-font: 300 23px "Libertinus Serif Display", system-ui;
     --text-font: 400 16px "Oxygen", sans-serif;
 }
 
@@ -25,7 +25,7 @@ header{
     background-color: var(--primary-color);
     font: var(--header-font);
     color: var(--whitefont);
-    width: 96%;
+    width: 97%;
     padding: 20px;
     display: block; 
 }
