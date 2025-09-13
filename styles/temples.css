@@ -90,6 +90,11 @@ h1 {
     font: var(--header-font);
 }
 
+h2 {
+    font: var(--header-font);
+    font-size: 21px;
+}
+
 .album {
     display: grid;
     grid-template-columns: 1fr;
