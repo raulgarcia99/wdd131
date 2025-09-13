@@ -11,7 +11,7 @@
 
 body {
     font: var(--text-font);
-    text-align: center;  
+    text-align: center;
 }
 
 header{    
@@ -100,7 +100,6 @@ img {
     max-width: 300px;
     height: auto;
 }
-
 
 footer {
     background-color: var(--primary-color);
