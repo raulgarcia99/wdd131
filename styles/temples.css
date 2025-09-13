@@ -28,7 +28,7 @@ header{
     color: var(--whitefont);
     width: auto;
 }
-/*
+
 #menu {
     background: none;
     color: var(--blackfont);
@@ -44,29 +44,39 @@ header{
 #menu.open::before {
     content:✖️;
 }
-*/
+
+
 nav {
-    background-color: var(--secondary-color);
     width: 100%;
 }
 
-nav ul {
+.navigation {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     padding: 10px;
 }
 
-nav a {
+.navigation a {
     color: var(--accent1-color);
     text-decoration: none;
     padding: 15px;
     font-weight: bold;
+    display: none;
 }
 
-nav a:hover {
+.navigation a:hover {
     background-color: var(--accent2-color);
     border: 1px solid var(--blackfont);
+}
+
+.open {
+    background-color: var(--secondary-color);
+}
+
+.open a {
+    display: block;
 }
 
 h1 {
@@ -75,7 +85,9 @@ h1 {
 
 .album {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: 1fr;
+    padding: 1rem;
 }
 
 img {
