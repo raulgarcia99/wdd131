@@ -1,0 +1,37 @@
+:root {
+    --primary-color: #3D348B;
+    --secondary-color: #ffffff;
+    --accent1-color: #1E6E46;
+    --accent2-color:#EFFFFE;
+    --lightfont: #ffffff;
+    --darkfont: #000000;
+    --header-font: 400 24px "PT Sans", sans-serif;
+    --text-font: 400 16px "Abel", sans-serif;
+}
+
+*{
+    font: var(--text-font);
+    text-align: center;
+}
+
+
+header{
+    background-color: var(--primary-color);
+    padding: 6px;
+}
+
+h1 {
+    font: var(--header-font);
+    color: var(--lightfont);
+}
+
+.hero{
+    width: 100%;
+    margin: 0;
+    border: 0;
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--lightfont);
+}
