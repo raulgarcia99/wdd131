@@ -28,21 +28,29 @@ h1 {
     color: var(--lightfont);
 }
 
-h2 {
-    font: var(--header-font);
-    color: var(--lightfont);
-    background-color: var(--accent1-color);
-}
-
 img {
     max-width: 100%;
     height: auto;
-    background-size: cover ;
+    background-size: cover;
 }
 
 .hero {
     background-color: var(--accent1-color);
 }
+
+h2 {
+    font: var(--header-font);
+    color: var(--lightfont);
+    background-color: var(--accent1-color);
+    border: 1px solid black;
+}
+
+/*.weather h2::after {
+    content: "🌤️";
+    font-size: 2rem;
+    margin-left:0.5rem
+}
+*/
 
 .square {
     width: auto;
@@ -50,9 +58,8 @@ img {
 }
 
 .icon {
-    width: 60px;
+    width: 5rem;
     height: auto;
-    border: 0;
 }
 
 footer{
