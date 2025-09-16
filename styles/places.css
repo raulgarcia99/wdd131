@@ -9,15 +9,18 @@
     --text-font: 400 16px "Abel", sans-serif;
 }
 
-*{
+* {
     font: var(--text-font);
     text-align: center;
 }
 
+body {
+    margin: 0;
+}
 
 header{
     background-color: var(--primary-color);
-    padding: 6px;
+    padding: 1rem;
 }
 
 h1 {
@@ -25,13 +28,29 @@ h1 {
     color: var(--lightfont);
 }
 
-.hero{
-    width: 100%;
-    margin: 0;
-    border: 0;
+h2 {
+    font: var(--header-font);
+    color: var(--lightfont);
+    background-color: var(--accent1-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    background-size: cover ;
+}
+
+.hero {
+    background-color: var(--accent1-color);
+}
+
+.square {
+    width: auto;
+    margin: 4%;
 }
 
 footer{
     background-color: var(--primary-color);
     color: var(--lightfont);
+    padding: 1rem;
 }
