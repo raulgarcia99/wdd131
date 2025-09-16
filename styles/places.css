@@ -49,6 +49,12 @@ img {
     margin: 4%;
 }
 
+.icon {
+    width: 60px;
+    height: auto;
+    border: 0;
+}
+
 footer{
     background-color: var(--primary-color);
     color: var(--lightfont);
