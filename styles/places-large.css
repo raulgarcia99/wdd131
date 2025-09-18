@@ -1,0 +1,45 @@
+@media (min-width: 1000px) {
+    * {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    .content {
+        background-color: var(--secondary-color);
+        box-shadow: 10px left;
+        padding: 10px;
+    }
+
+    .data {
+        position: absolute;
+        left: 3rem;
+        top: 7rem;
+
+    }
+
+    .weather {
+        position: absolute;
+        right: 3rem;
+        bottom: 0;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .weather h2::after {
+    content: "🌤️";
+    font-size: 1.6rem;
+    margin-left:0.5rem
+    }
+
+}

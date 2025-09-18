@@ -45,13 +45,6 @@ h2 {
     border: 1px solid black;
 }
 
-/*.weather h2::after {
-    content: "🌤️";
-    font-size: 2rem;
-    margin-left:0.5rem
-}
-*/
-
 .square {
     width: auto;
     margin: 4%;
