@@ -20,7 +20,7 @@ body {
 
 header{
     background-color: var(--primary-color);
-    padding: 1rem;
+    padding: 10px;
 }
 
 h1 {
@@ -48,6 +48,7 @@ h2 {
 .square {
     width: auto;
     margin: 4%;
+    padding: 2%;
 }
 
 .left {
@@ -73,5 +74,5 @@ h2 {
 footer{
     background-color: var(--primary-color);
     color: var(--lightfont);
-    padding: 1rem;
+    padding: 10px;
 }
