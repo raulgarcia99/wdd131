@@ -1,0 +1,25 @@
+@media (min-width:768px ){
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        background-color: var(--secondary-color);
+        border: 1px solid var(--primary-color);
+    }
+
+    .navigation a {
+        display: block;
+    }
+
+    .album {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
