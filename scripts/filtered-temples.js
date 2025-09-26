@@ -62,6 +62,30 @@ const temples = [
     area: 116642,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  },
+  {
+    templeName: "San Salvador El Savador",
+    location: "San Salvador, El Salvador",
+    dedicated: "2011, August, 21",
+    area: 27986,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/_temp/135-San-Salvador-El-Salvador-Temple.jpg"
+  },
+  {
+    templeName: "Guatemala City Guatemala",
+    location: "Guatemala City, Guatemala",
+    dedicated: "1984, December, 15",
+    area: 11610,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/guatemala-city-guatemala-temple/guatemala-city-guatemala-temple-9670.jpg"
+  },
+  {
+    templeName: "Paris France",
+    location: "Paris, France",
+    dedicated: "2017, May, 21",
+    area: 44175,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg"
   }];
 
   creationTempleCard();
@@ -77,7 +101,7 @@ const temples = [
 
       name.textContent = temple.templeName;
       location.innerHTML = `<span class= "label">Location:</span> ${temple.location}`;
-      dedication.innerHTML = `<span class= "label">Dedicated:</span> ${temple.dedication}`;
+      dedication.innerHTML = `<span class= "label">Dedicated:</span> ${temple.dedicated}`;
       area.innerHTML = `<span class= "label">Area:</span> ${temple.area} sq ft`;
 
       card.setAttribute("class", "card")

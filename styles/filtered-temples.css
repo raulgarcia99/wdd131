@@ -9,6 +9,11 @@
     --text-font: 400 16px "Oxygen", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+
 body {
     font: var(--text-font);
     text-align: center;
@@ -27,8 +32,8 @@ header{
     font: var(--header-font);
     color: var(--whitefont);
     width: 100%;
-    padding: 20px;
-    display: block; 
+    padding: 20px   ;
+    display: block;
 }
 
 #menu {
@@ -85,6 +90,10 @@ nav {
 
 .open a {
     display: block;
+}
+
+main{
+    margin: 10px;
 }
 
 h1 {
