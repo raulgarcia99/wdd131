@@ -88,10 +88,41 @@ const temples = [
     "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg"
   }];
 
-  creationTempleCard();
+  creationTempleCard(temples);
 
-  function creationTempleCard () {
-    temples.forEach(temple => {
+  const homeLink = document.querySelector("#home");
+
+  homeLink.addEventListener("click", () => {
+    creationTempleCard(temples);
+  })
+
+  const oldLink = document.querySelector("#old");
+
+  oldLink.addEventListener("click", () => {
+    creationTempleCard(temples.filter(temple => parseInt(temple.dedicated.slice(0,4)) < 1900));
+  })
+
+  const newLink = document.querySelector("#new");
+
+  newLink.addEventListener("click", () => {
+    creationTempleCard(temples.filter(temple => parseInt(temple.dedicated.slice(0,4)) > 2000));
+  })
+
+  const largeLink = document.querySelector("#large");
+
+  largeLink.addEventListener("click", () => {
+    creationTempleCard(temples.filter(temple => temple.area > 90000));
+  })
+
+  const smallLink = document.querySelector("#small");
+
+  smallLink.addEventListener("click", () => {
+    creationTempleCard(temples.filter(temple => temple.area < 10000));
+  })
+
+  function creationTempleCard (filteredTemples) {
+    document.querySelector(".album").innerHTML = "";
+    filteredTemples.forEach(temple => {
       let card = document.createElement("section");
       let name = document.createElement("h3");
       let location = document.createElement("p");
