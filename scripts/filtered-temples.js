@@ -138,8 +138,6 @@ const temples = [
       card.setAttribute("class", "card")
       img.setAttribute("src", temple.imageUrl);
       img.setAttribute("alt", `${temple.templeName} Temple`);
-      img.setAttribute("width", "250px");
-      img.setAttribute("height","auto");
       img.setAttribute("loading", "lazy");
 
       card.appendChild(name);
