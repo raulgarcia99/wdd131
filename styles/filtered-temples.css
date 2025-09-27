@@ -125,6 +125,7 @@ h3 {
 img {
     background-color: #eee;
     overflow: hidden;
+    object-fit: cover;
 }
 
 footer {
