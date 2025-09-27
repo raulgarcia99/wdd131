@@ -122,11 +122,6 @@ h3 {
     padding: 10px;
 }
 
-img {
-    max-width: 250px;
-    height: auto;
-}
-
 footer {
     background-color: var(--primary-color);
     color: var(--whitefont);
