@@ -141,7 +141,6 @@ const temples = [
       img.setAttribute("width", "250px");
       img.setAttribute("height","auto");
       img.setAttribute("loading", "lazy");
-      img.setAttribute("style.background-color", "f0f0f0")
 
       card.appendChild(name);
       card.appendChild(location);
