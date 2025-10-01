@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #FFA200;
+    --secondary-color: #0839B3;
+    --accent1-color: #FFB05B;
+    --accent2-color: #06007A;
+    --special-darkfont: #000000;
+    --special-lightfont: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    background-color: var(--secondary-color);
+}
+
+header{
+    background-color: var(--primary-color);
+    padding: 10px;
+    border: 1px solid black;
+}
+
+main {
+    margin-left: 10px;
+    background-color: var(--accent1-color);
+    padding: 10px;
+}
+
+.main-color{
+    background-color: var(--primary-color);
+}
+
+.second-color{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.accent-1{
+    background-color: var(--accent1-color);
+}
+
+.accent-2{
+    background-color: var(--accent2-color);
+    color: white;
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--special-darkfont);
+    padding: 10px;
+    border: 1px solid black;
+}
