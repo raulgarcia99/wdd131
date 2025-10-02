@@ -5,23 +5,44 @@
     --accent2-color: #06007A;
     --special-darkfont: #000000;
     --special-lightfont: #FFFFFF;
+    --heading-font: 400 25px "Chelsea Market", system-ui;
+    --text-font: 400 16px "Solway", serif;
 }
 
 body {
     margin: 0;
     background-color: var(--secondary-color);
+    font: var(--text-font);
+    box-sizing: border-box;
+}
+
+h1 {
+    font: var(--heading-font);
+    font-size: 30px;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    padding: 1rem;
 }
 
 header{
     background-color: var(--primary-color);
     padding: 10px;
     border: 1px solid black;
+    display: flex;
+    align-items: center;
 }
 
 main {
     margin-left: 10px;
     background-color: var(--accent1-color);
     padding: 10px;
+}
+
+h2 {
+    font: var(--heading-font)
 }
 
 .main-color{
@@ -35,11 +56,21 @@ main {
 
 .accent-1{
     background-color: var(--accent1-color);
+    border: 1px solid var(--special-darkfont)
 }
 
 .accent-2{
     background-color: var(--accent2-color);
     color: white;
+}
+
+#heading-font {
+    font: var(--heading-font);
+    font-size: 20px;
+}
+
+#text-font {
+    font-size: 20px;
 }
 
 footer{
