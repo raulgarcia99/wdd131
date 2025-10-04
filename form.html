@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product review form</title>
+    <meta name="description" content="Fill out this form and provide a review of our products. You can express yourself
+    how comfortable you feel with the variety of products we offer.">
+    <meta name="author" content="Raul Garcia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <legend>Product Name</legend>
+            <label>
+                <select name="product" id="product" required>
+                <option value="" disabled selected>Select a product</option>
+                </select>
+            </label>
+
+            <legend>Overall Rating</legend>
+                <input type="radio" id="five-stars" name="stars" required>
+                <input type="radio" id="four-stars" name="stars" required>
+                <input type="radio" id="three-stars" name="stars" required>
+                <input type="radio" id="two-stars" name="stars" required>
+                <input type="radio" id="one-star" name="stars" required>
+
+            <legend>Date of Installation</legend>
+            <label><input type="date" name="installationDate" id="installationDate" required></label>
+
+            <legend>Useful features</legend>
+            <label><input type="checkbox" name="features" id="design" value="yes">Design</label>
+            <label><input type="checkbox" name="features" id="durability" value="yes">Durability</label>
+            <label><input type="checkbox" name="features" id="ease-to-use" value="yes">Ease to use</label>
+            <label><input type="checkbox" name="features" id="performance" value="yes">Performance</label>
+
+            <legend>Written Review</legend>
+            <textarea name="review" id="review"></textarea>
+
+            <legend>Your Name</legend>
+            <input type="text" name="username" id="username">
+
+            <input type="submit" value="Share My Review">
+        </form>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Raúl Alejandro García Samayoa, El Salvador</p>
+        <p id="lastModified"></p>
+    </footer>    
+</body>
+</html>

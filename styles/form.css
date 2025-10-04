@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #DC0457;
+    --secondary-color: #E6E2D7;
+    --accent1-color: #435058;
+    --accent2-color: #FFD2EB;
+    --header-font: 400 35px "Bree Serif", serif;
+    --text-font: 400 18px "Ubuntu", sans-serif;
+}
+
+body {
+    font: var(--text-font);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 5px 0 5px 20px;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font: var(--header-font);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 5px 0 5px 20px;
+    margin-top: 1rem;
+}
