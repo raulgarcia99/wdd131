@@ -21,7 +21,7 @@ h1 {
     font-size: 30px;
 }
 
-img {
+#logo {
     width: 100px;
     height: auto;
     padding: 1rem;
@@ -71,6 +71,18 @@ h2 {
 
 #text-font {
     font-size: 20px;
+}
+
+#desktop-wireframe {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+}
+
+#mobile-wireframe {
+    width: 150px;
+    height: auto;
+    padding: 10px;
 }
 
 footer{
