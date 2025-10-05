@@ -19,38 +19,46 @@
         <h1>Product review</h1>
     </header>
     <main>
-        <form method="get" action="review.html">
-            <legend>Product Name</legend>
-            <label>
-                <select name="product" id="product" required>
-                <option value="" disabled selected>Select a product</option>
-                </select>
-            </label>
+        <div class="form-box">
+            <form method="get" action="review.html">
+                <legend>Product Name</legend>
+                <label>
+                    <select name="product" id="product" required>
+                    <option value="" disabled selected>Select a product</option>
+                    </select>
+                </label>
 
-            <legend>Overall Rating</legend>
-                <input type="radio" id="five-stars" name="stars" required>
-                <input type="radio" id="four-stars" name="stars" required>
-                <input type="radio" id="three-stars" name="stars" required>
-                <input type="radio" id="two-stars" name="stars" required>
-                <input type="radio" id="one-star" name="stars" required>
+                <legend>Overall Rating</legend>
+                    <div class="stars">
+                        <input type="radio" id="five-stars" name="rating" value="5" required>
+                        <label for="five-stars"></label>
+                        <input type="radio" id="four-stars" name="rating" value="4" required>
+                        <label for="four-stars"></label>
+                        <input type="radio" id="three-stars" name="rating" value="3" required>
+                        <label for="three-stars"></label>
+                        <input type="radio" id="two-stars" name="rating" value="2" required>
+                        <label for="two-stars"></label>
+                        <input type="radio" id="one-star" name="rating" value="1" required>
+                        <label for="one-star"></label>                 
+                    </div>
+                <legend>Date of Installation</legend>
+                <label><input type="date" name="installationDate" id="installationDate" required></label>
 
-            <legend>Date of Installation</legend>
-            <label><input type="date" name="installationDate" id="installationDate" required></label>
+                <legend>Useful features</legend>
+                <label><input type="checkbox" name="features" id="design" value="yes">Design</label>
+                <label><input type="checkbox" name="features" id="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="features" id="ease-to-use" value="yes">Ease to use</label>
+                <label><input type="checkbox" name="features" id="performance" value="yes">Performance</label>
 
-            <legend>Useful features</legend>
-            <label><input type="checkbox" name="features" id="design" value="yes">Design</label>
-            <label><input type="checkbox" name="features" id="durability" value="yes">Durability</label>
-            <label><input type="checkbox" name="features" id="ease-to-use" value="yes">Ease to use</label>
-            <label><input type="checkbox" name="features" id="performance" value="yes">Performance</label>
+                <legend>Written Review</legend>
+                <textarea name="review" id="review"></textarea>
 
-            <legend>Written Review</legend>
-            <textarea name="review" id="review"></textarea>
+                <legend>Your Name</legend>
+                <input type="text" name="username" id="username">
 
-            <legend>Your Name</legend>
-            <input type="text" name="username" id="username">
-
-            <input type="submit" value="Share My Review">
-        </form>
+                <input type="submit" value="Share My Review">
+            </form>
+        </div>
     </main>
     <footer>
         <p><span id="currentyear"></span> Raúl Alejandro García Samayoa, El Salvador</p>
