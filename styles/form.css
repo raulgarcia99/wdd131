@@ -41,9 +41,6 @@ main {
 
 label {
     display: block;
-    margin-top: 20px;
-    font-size: 25px;
-    color: var(--special-darkcolor);
 }
 
 h2 {
