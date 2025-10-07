@@ -3,4 +3,8 @@
     width: 100%;
     max-width: 500px;
     }
+
+        #mandatory {
+        font-size: 16px;
+    }
 }
