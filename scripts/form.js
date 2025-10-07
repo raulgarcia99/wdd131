@@ -33,8 +33,20 @@ function convertCapital (text) {
 }
 
 function createOption (products) {
-    document.querySelector("#product").innerHTML =
-        '<option value="" disabled selected>Select a product</option>';
+    document.querySelector("#select").innerHTML = "";
+
+    let select = document.createElement("select");
+
+    select.setAttribute("name", "product");
+    select.setAttribute("id", "product");
+    select.setAttribute("required", "true")
+
+    document.querySelector("#select").appendChild(select);
+
+    document.querySelector("#product").innerHTML=
+    '<option value="" disabled selected>Choose a product</option>'
+
+
     products.forEach(product => {
         let option = document.createElement("option");
 
@@ -45,6 +57,7 @@ function createOption (products) {
         document.querySelector("#product").appendChild(option);
         
     });
+
 }
 
 const currentyear = document.querySelector("#currentyear");
