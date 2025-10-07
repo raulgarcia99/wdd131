@@ -43,6 +43,10 @@ label {
     display: block;
 }
 
+.block {
+    display: block;
+}
+
 h2 {
     margin-top: 20px;
     font-size: 25px;
@@ -58,7 +62,8 @@ input, select, textarea {
   flex-direction: row-reverse;
   justify-content: space-between;
   width: 140px;
-  margin-bottom: 50px;
+  margin-top: -25px ;
+  margin-bottom: 70px;
   position: relative;
 }
 
@@ -67,7 +72,7 @@ input, select, textarea {
 }
 
 .stars label {
-  font-size: 30px;
+  font-size: 40px;
   color: var(--accent1-color);
   cursor: pointer;
   position: relative;
