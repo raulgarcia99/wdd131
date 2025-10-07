@@ -113,7 +113,7 @@ input[type="submit"] {
 }
 
 .confirmation {
-    justify-content: center;
+    text-align: center;
 }
 
 footer {
