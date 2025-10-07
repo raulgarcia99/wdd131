@@ -112,6 +112,10 @@ input[type="submit"] {
     font: var(--text-font);
 }
 
+.confirmation {
+    justify-content: center;
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--accent2-color);
