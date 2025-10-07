@@ -21,14 +21,14 @@
     <main>
         <div class="form-box">
             <form method="get" action="review.html">
-                <legend>Product Name</legend>
+                <h2>Product Name</h2>
                 <label>
                     <select name="product" id="product" required>
-                    <option value="" disabled selected>Select a product</option>
+
                     </select>
                 </label>
 
-                <legend>Overall Rating</legend>
+                <h2>Overall Rating</h2>
                     <div class="stars">
                         <input type="radio" id="five-stars" name="rating" value="5" required>
                         <label for="five-stars"></label>
@@ -41,19 +41,19 @@
                         <input type="radio" id="one-star" name="rating" value="1" required>
                         <label for="one-star"></label>                 
                     </div>
-                <legend>Date of Installation</legend>
+                <h2>Date of Installation</h2>
                 <label><input type="date" name="installationDate" id="installationDate" required></label>
 
-                <legend>Useful features</legend>
+                <h2>Useful features</h2>
                 <label><input type="checkbox" name="features" id="design" value="yes">Design</label>
                 <label><input type="checkbox" name="features" id="durability" value="yes">Durability</label>
                 <label><input type="checkbox" name="features" id="ease-to-use" value="yes">Ease to use</label>
                 <label><input type="checkbox" name="features" id="performance" value="yes">Performance</label>
 
-                <legend>Written Review</legend>
+                <h2>Written Review</h2>
                 <textarea name="review" id="review"></textarea>
 
-                <legend>Your Name</legend>
+                <h2>Your Name</h2>
                 <input type="text" name="username" id="username">
 
                 <input type="submit" value="Share My Review">

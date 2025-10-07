@@ -1,8 +1,9 @@
 :root {
-    --primary-color: #DC0457;
+    --primary-color: #c90751;
     --secondary-color: #E6E2D7;
     --accent1-color: #435058;
-    --accent2-color: #FFD2EB;
+    --accent2-color: #fddeef;
+    --special-darkcolor: #DC0457;
     --header-font: 400 35px "Bree Serif", serif;
     --text-font: 400 18px "Ubuntu", sans-serif;
 }
@@ -32,7 +33,8 @@ main {
 
 .form-box {
     background-color: var(--secondary-color);
-    width: 350px;
+    width: 100%;
+    max-width: 300px;
     justify-items: center;
     padding: 15px;
 }
@@ -41,10 +43,10 @@ label {
     display: block;
 }
 
-legend {
+h2 {
     margin-top: 20px;
     font-size: 20px;
-    color: var(--primary-color);
+    color: var(--special-darkcolor);
 }
 
 input, select, textarea {
