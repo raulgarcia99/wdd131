@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #FFA200;
+    --secondary-color: #0839B3;
+    --accent1-color: #ffc17e;
+    --accent2-color: #06007A;
+    --special-darkfont: #000000;
+    --special-lightfont: #FFFFFF;
+    --heading-font: 400 25px "Chelsea Market", system-ui;
+    --text-font: 400 16px "Solway", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+    font: var(--text-font);
+    text-align: center;
+    margin: 0;
+}
+
+header{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.web-title {
+    background-color: var(--primary-color);
+    font: var(--header-font);
+    color: var(--whitefont);
+    width: 100%;
+    padding: 20px   ;
+    display: block;
+}
+
+#menu {
+    background: none;
+    color: var(--blackfont);
+    position: absolute;
+    top: 0.9rem;
+    right: 1rem;
+    border: 0;
+    font-size: 25px;
+    display: block;   
+}
+
+#menu::before {
+    color: var(--whitefont);
+    content:"☰" ;  
+}
+
+#menu.open::before {
+    color: var(--whitefont);
+    content:"X";
+}
+
+
+nav {
+    width: 100%;
+}
+
+.navigation {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0;
+}
+
+.navigation a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+    display: none;
+}
+
+.navigation a:hover {
+    background-color: var(--accent2-color);
+    border: 1px solid var(--blackfont);
+}
+
+.open {
+    background-color: var(--secondary-color);
+}
+
+.open a {
+    display: block;
+}
+
+main{
+    margin: 10px;
+}
+
+h1 {
+    font: var(--header-font);
+}
+
+h2 {
+    font: var(--header-font);
+    font-size: 21px;
+}
+
+h3 {
+    font: var(--header-font);
+    font-size: 25px;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.card {
+    background-color: var(--secondary-color);
+    border: 1px solid black;
+    padding: 10px;
+}
+
+img {
+    background-color: #eee;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--whitefont);
+    padding: 1rem;
+    width: 100%; 
+}
