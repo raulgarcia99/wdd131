@@ -3,9 +3,9 @@
     --secondary-color: #0839B3;
     --accent1-color: #ffc17e;
     --accent2-color: #06007A;
-    --special-darkfont: #000000;
-    --special-lightfont: #FFFFFF;
-    --heading-font: 400 25px "Chelsea Market", system-ui;
+    --whitefont: #ffffff;
+    --blackfont: #000000;
+    --header-font: 400 25px "Chelsea Market", system-ui;
     --text-font: 400 16px "Solway", serif;
 }
 
