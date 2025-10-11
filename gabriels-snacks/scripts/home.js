@@ -7,6 +7,8 @@ hambutton.addEventListener("click", () => {
     hambutton.classList.toggle("open");
 });
 
+//Products Array
+
 const products = [
   {
     productType: "snack",
@@ -54,7 +56,7 @@ const products = [
     price: 1.00,
     content: "42.5 gr",
     imageUrl:
-    "images/coca-cola.webp"
+    "images/lays-classic.webp"
   },
   {
     productType: "beverage",
@@ -78,7 +80,7 @@ const products = [
     price: 0.85,
     content: "355 ml",
     imageUrl:
-    "images/coca-cola.webp"
+    "images/tosh-coconut.webp"
   },
   {
     productType: "snack",
@@ -105,6 +107,53 @@ const products = [
     "images/yummi-pops.webp"
   }  
 ]
+
+//Executing functions
+
+createProductCard(products);
+
+  const snacksFiltered = document.querySelector("#snacks");
+
+  snacksFiltered.addEventListener("click", () => {
+    createProductCard(products.filter(product => product.productType === "snack"));
+  })
+
+  const beveragesFiltered = document.querySelector("#beverages");
+
+  beveragesFiltered.addEventListener("click", () => {
+    createProductCard(products.filter(product => product.productType === "beverage"));
+  })
+
+//Functions
+
+function createProductCard (filteredProducts) {
+    document.querySelector(".catalog").innerHTML = "";
+    filteredProducts.forEach(product => {
+      let card = document.createElement("section");
+      let name = document.createElement("h3");
+      let content = document.createElement("p");
+      let price = document.createElement("p");
+      let img = document.createElement("img");
+
+      name.textContent = product.productName;
+      content.innerHTML = `<span class= "label">Content:</span> ${product.content}`;
+      price.innerHTML = `<span class= "label">Price:</span> $${product.price.toFixed(2)}`;
+
+      card.setAttribute("class", "card")
+      img.setAttribute("src", product.imageUrl);
+      img.setAttribute("alt", `${product.productName} ${product.content}`);
+      img.setAttribute("width", "300px");
+      img.setAttribute("height","300px");
+      img.setAttribute("loading", "lazy");
+
+      card.appendChild(name);
+      card.appendChild(content);
+      card.appendChild(price);
+      card.appendChild(img);
+
+      document.querySelector(".catalog").appendChild(card);
+    })
+  }
 
 // Footer
 

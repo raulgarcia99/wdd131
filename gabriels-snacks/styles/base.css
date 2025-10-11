@@ -1,8 +1,8 @@
 :root {
     --primary-color: #FFA200;
-    --secondary-color: #0839B3;
-    --accent1-color: #ffc17e;
-    --accent2-color: #06007A;
+    --secondary-color: #072f96;
+    --accent1-color: #ffd6aa;
+    --accent2-color: #070263;
     --whitefont: #ffffff;
     --blackfont: #000000;
     --header-font: 400 25px "Chelsea Market", system-ui;
@@ -110,7 +110,7 @@ h3 {
     font-size: 25px;
 }
 
-.album {
+.catalog {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
