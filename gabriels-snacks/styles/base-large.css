@@ -21,7 +21,6 @@
     .catalog {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        color: var(--accent1-color);
     }
 
 }

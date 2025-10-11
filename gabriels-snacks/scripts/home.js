@@ -112,6 +112,12 @@ const products = [
 
 createProductCard(products);
 
+const notFiltered = document.querySelector("#home");
+
+notFiltered.addEventListener("click", () => {
+    createProductCard(products);
+  })
+
   const snacksFiltered = document.querySelector("#snacks");
 
   snacksFiltered.addEventListener("click", () => {

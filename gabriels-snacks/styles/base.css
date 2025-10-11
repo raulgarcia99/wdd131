@@ -114,6 +114,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+    color: var(--accent1-color);
 }
 
 .card {
