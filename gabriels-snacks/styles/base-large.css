@@ -1,12 +1,31 @@
 @media (min-width:768px ){
 
+    #logo {
+    width: 100px;
+    top: 2%;
+    left: 2%;
+}
+
+    .web-title {
+    font-size: 38px;
+    padding: 40px 0;
+}
+
     .navigation {
         display: flex;
         flex-direction: row;
     }
 
+    .navigation a {
+        font-size: 20px;
+    }
+
     #menu {
         display: none;
+        top: 2.3rem;
+        right: 1rem;
+        font-size: 35px;
+  
     }
 
     .navigation {

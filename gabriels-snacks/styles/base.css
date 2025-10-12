@@ -29,20 +29,20 @@ header{
 }
 
 #logo {
-    width: 100px;
+    width: 55px;
     height: auto;
     position: absolute;
-    top: 2%;
-    left: 2%;
+    top: 1.5%;
+    left: 3%;
 }
 
 .web-title {
     background-color: var(--primary-color);
     font: var(--header-font);
     color: var(--darkfont);
-    font-size: 38px;
+    font-size: 25px;
     width: 100%;
-    padding: 40px 0;
+    padding: 20px;
     display: block;
 }
 
@@ -50,10 +50,10 @@ header{
     background: none;
     color: var(--darkfont);
     position: absolute;
-    top: 2.3rem;
+    top: 1.2rem;
     right: 1rem;
     border: 0;
-    font-size: 35px;
+    font-size: 26px;
     display: block;   
 }
 
@@ -87,7 +87,6 @@ nav {
     padding: 15px;
     font-weight: bold;
     display: none;
-    font-size: 20px;
 }
 
 .navigation a:hover {
