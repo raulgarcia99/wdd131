@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #FFA200;
+    --primary-color: #ffa200;
     --secondary-color: #072f96;
     --accent1-color: #ffd6aa;
     --accent2-color: #070263;
-    --whitefont: #ffffff;
-    --blackfont: #000000;
+    --lightfont: #FFFFFF;
+    --darkfont: #000000;
     --header-font: 400 25px "Chelsea Market", system-ui;
-    --text-font: 400 16px "Solway", serif;
+    --text-font: 400 18px "Solway", serif;
 }
 
 * {
@@ -18,6 +18,7 @@ body {
     font: var(--text-font);
     text-align: center;
     margin: 0;
+    background-color: var(--accent1-color);
 }
 
 header{    
@@ -27,33 +28,42 @@ header{
     flex-direction: column;
 }
 
+#logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
 .web-title {
     background-color: var(--primary-color);
     font: var(--header-font);
-    color: var(--whitefont);
+    color: var(--darkfont);
+    font-size: 38px;
     width: 100%;
-    padding: 20px   ;
+    padding: 40px 0;
     display: block;
 }
 
 #menu {
     background: none;
-    color: var(--blackfont);
+    color: var(--darkfont);
     position: absolute;
-    top: 1.2rem;
+    top: 2.3rem;
     right: 1rem;
     border: 0;
-    font-size: 25px;
+    font-size: 35px;
     display: block;   
 }
 
 #menu::before {
-    color: var(--whitefont);
-    content:"☰" ;  
+    color: var(--lightfont);
+    content:"☰" ;
 }
 
 #menu.open::before {
-    color: var(--whitefont);
+    color: var(--lightfont);
     content:"X";
 }
 
@@ -72,16 +82,17 @@ nav {
 }
 
 .navigation a {
-    color: var(--accent1-color);
+    color: var(--lightfont);
     text-decoration: none;
     padding: 15px;
     font-weight: bold;
     display: none;
+    font-size: 20px;
 }
 
 .navigation a:hover {
     background-color: var(--accent2-color);
-    border: 1px solid var(--blackfont);
+    border: 1px solid var(--darkfont);
 }
 
 .open {
@@ -114,7 +125,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
-    color: var(--accent1-color);
+    color: var(--lightfont);
 }
 
 .card {
@@ -131,7 +142,7 @@ img {
 
 footer {
     background-color: var(--primary-color);
-    color: var(--whitefont);
+    color: var(--darkfont);
     padding: 1rem;
     width: 100%; 
 }
