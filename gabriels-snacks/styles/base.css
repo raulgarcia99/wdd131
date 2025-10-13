@@ -10,7 +10,7 @@
 }
 
 
-/*Home Page Code
+/*home.html
 
 Whole page*/
 
@@ -175,8 +175,14 @@ Main*/
 
 .contact {
     color: var(--lightfont);
+    text-align: justify;
+}
+
+.contact h1 {
+    text-align: center;
 }
 
 .label {
-font-weight: bold;
+    font-weight: bold;
+    display: block;
 }

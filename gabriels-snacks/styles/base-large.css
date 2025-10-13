@@ -1,5 +1,9 @@
 @media (min-width:768px ){
 
+    /*home.html
+    
+    Header*/
+
     #logo {
     width: 100px;
     top: 2%;
@@ -37,9 +41,23 @@
         display: block;
     }
 
+    /*Main*/
+
     .catalog {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /*contact.html
+    
+    Main*/
+    .contact {
+    color: var(--lightfont);
+    text-align: center;
+    }
+
+    .label {
+        display: inline;
+    }
+}
 }

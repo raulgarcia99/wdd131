@@ -20,11 +20,11 @@ const contactInfo = {
 //Display Contact Info
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector("#location").innerHTML = `🗺️ <span class= "label">Location:</span> ${contactInfo.location}`;
-    document.querySelector("#address").innerHTML = `📍 <span class= "label">Address:</span> ${contactInfo.address}`;
-    document.querySelector("#email").innerHTML = `📧 <span class= "label">Email:</span> ${contactInfo.email}`;
-    document.querySelector("#phone").innerHTML = `📞 <span class= "label">Phone:</span> ${contactInfo.phone}`;
-    document.querySelector("#hours").innerHTML = `⏰ <span class= "label">Hours:</span> ${contactInfo.hours}`;
+    document.querySelector("#location").innerHTML = `<span class= "label">🗺️ Location:</span> ${contactInfo.location}`;
+    document.querySelector("#address").innerHTML = `<span class= "label">📍 Address:</span> ${contactInfo.address}`;
+    document.querySelector("#email").innerHTML = `<span class= "label">📧 Email:</span> ${contactInfo.email}`;
+    document.querySelector("#phone").innerHTML = `<span class= "label">📞 Phone:</span> ${contactInfo.phone}`;
+    document.querySelector("#hours").innerHTML = `<span class= "label">⏰ Hours:</span> ${contactInfo.hours}`;
 });
 
 
