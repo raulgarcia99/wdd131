@@ -9,6 +9,11 @@
     --text-font: 400 18px "Solway", serif;
 }
 
+
+/*Home Page Code
+
+Whole page*/
+
 * {
   box-sizing: border-box;
 }
@@ -20,6 +25,8 @@ body {
     margin: 0;
     background-color: var(--accent1-color);
 }
+
+/*Header*/
 
 header{    
     display: flex;
@@ -102,6 +109,8 @@ nav {
     display: block;
 }
 
+/*Main*/
+
 main{
     margin: 10px;
 }
@@ -112,7 +121,7 @@ h1 {
 
 h2 {
     font: var(--header-font);
-    font-size: 21px;
+    font-size: 22px;
 }
 
 h3 {
@@ -139,9 +148,35 @@ img {
     object-fit: cover;
 }
 
+/*Footer*/
+
 footer {
     background-color: var(--primary-color);
     color: var(--darkfont);
     padding: 1rem;
     width: 100%; 
+}
+
+/*Specific code for Contact.html
+
+Main*/
+
+.contact-info {
+    background-color: var(--accent2-color);
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 1rem;
+    justify-items: center;
+}
+
+.box {
+    text-align: left;
+}
+
+.contact {
+    color: var(--lightfont);
+}
+
+.label {
+font-weight: bold;
 }
