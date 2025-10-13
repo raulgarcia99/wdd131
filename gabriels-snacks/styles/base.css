@@ -157,7 +157,7 @@ footer {
     width: 100%; 
 }
 
-/*Specific code for Contact.html
+/*contact.html
 
 Main*/
 
@@ -173,17 +173,40 @@ Main*/
     text-align: left;
 }
 
-.contact {
+.bluebox {
     color: var(--lightfont);
     text-align: justify;
-    padding: 10px;
+    padding: 10px 1rem;
+    margin-bottom: 10px;
 }
 
-.contact h1 {
+.bluebox h1 {
     text-align: center;
 }
 
 .label {
     font-weight: bold;
     display: block;
+}
+
+/*about.html
+
+Main*/
+
+.album {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.album img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: auto;
+    align-self: center;
+}
+
+.source p a {
+    color: #ffa200;
 }
