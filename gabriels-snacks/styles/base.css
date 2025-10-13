@@ -176,6 +176,7 @@ Main*/
 .contact {
     color: var(--lightfont);
     text-align: justify;
+    padding: 10px;
 }
 
 .contact h1 {
