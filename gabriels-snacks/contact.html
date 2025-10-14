@@ -50,6 +50,29 @@
                     <p id="hours"></p>
                 </div>
         </section>
+        <section class="card bluebox">
+            <div class="center">
+                <h2>Inquiries and suggestions</h2>
+                <form action="confirmation.html">
+                    <span id="mandatory"><i>* = Mandatory</i></span>
+                    <h2>Personal information</h2>
+                        <label for="fname" class="more-space">First Name:*<br><input type="text" name="fname" id="fname" placeholder="John" required></label>
+                        <label for="lname" class="more-space">Last Name:*<br><input type="text" name="lname" id="lname" placeholder="Doe" required></label>
+                        <label for="email" class="more-space">Email:*<br><input type="email" name="email" id="email" placeholder="example@email.com" required></label>
+                        <label for="tel" class="more-space">Phone Number:<br><input type="tel" name="tel" id="tel" placeholder="12345678" required></label>
+                    <h2>Action and opinion</h2>
+                        <label for="inquiry"><input type="radio" name="action" id="inquiry">General inquiry</label><br>
+                        <label for="product-q"><input type="radio" name="action" id="product-q">Product question</label><br>
+                        <label for="suggestion"><input type="radio" name="action" id="suggestion">Web suggestion</label>
+
+                        <label for="opinion" class="more-space">Tell us what you think: <br><textarea name="opinion" id="opinion"></textarea></label>
+                    <h2>Subscribe to our newsletter</h2>
+                        <label for="newsletter">Yes, I want to subscribe <input type="checkbox" name="subscription" id="newsletter"></label>
+
+                        <input type="submit" value="Send my information">
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <p><span id="currentyear"></span> Raúl Alejandro García Samayoa, El Salvador</p>
